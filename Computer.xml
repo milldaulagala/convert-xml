@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Computer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name>Comp_AMS010004</name>
+  <memory>504</memory>
+  <product>HP d530 SFF(DC578AV)</product>
+</Computer>
