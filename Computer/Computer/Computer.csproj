@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{31EB523C-3597-45AA-8087-3DBB8FDF269A}</ProjectGuid>
+    <ProjectGuid>{3A430CEA-E4CC-4235-B0C3-8F7924341C35}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>millxml</RootNamespace>
-    <AssemblyName>millxml</AssemblyName>
+    <RootNamespace>Computer</RootNamespace>
+    <AssemblyName>Computer</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -30,16 +30,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Commons.Xml.Relaxng" />
-    <Reference Include="System.Data.Linq" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Serialization" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HTMLGenerator.cs" />
+    <Compile Include="IHTMLGenerator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
